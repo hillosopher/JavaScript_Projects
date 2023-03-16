@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body></body>
+
+  <script>
+    $(document).ready(() => {
+      $("html").append(
+        "<body>\
+                <div id='container'>\
+                    <div id='inner'>\
+                        <div id='title'>\
+                        <h1>Basic jQuery</h1>\
+                        </div>\
+                        <p id='1'>Paragraph 1</p>\
+                        <p id='2'>Paragraph 2</p>\
+                        <p id='3'>Paragraph 3</p>\
+                    </div>\
+                </div>\
+            </body>"
+      );
+      $("#title").css({ height: "60px" });
+      $("#2").css({ color: "red" });
+      $("#3").click(() => {
+        $("h1").hide();
+      });
+    });
+  </script>
+</html>
